@@ -9,7 +9,7 @@ function TodoContainer() {
       className={`flex w-full flex-col dark:shadow-none shadow-xl dark:bg-neutral-dark-veryDarkDesaturatedBlue bg-neutral-light-veryLightGray rounded-lg `}
     >
       {filteredTask.map((item, id) => (
-        <Todo key={id} item={item} />
+        <Todo key={id} item={item} index={id} />
       ))}
       <ActionUp />
     </div>

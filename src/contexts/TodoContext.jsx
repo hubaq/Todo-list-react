@@ -4,11 +4,11 @@ import { createContext, useContext, useReducer } from "react";
 
 const initialState = {
   todo: [
-    {
-      id: 1,
-      text: "Go to mosque to pray",
-      completed: false,
-    },
+    // {
+    //   id: 1,
+    //   text: "Go to mosque to pray",
+    //   completed: false,
+    // },
   ],
   darkMode: true,
   filter: "All",
@@ -27,7 +27,10 @@ function reducer(state, action) {
         todo: state.todo.filter((item) => item.id !== action.payload),
       };
     case "Drag":
-      return {};
+      return {
+        ...state,
+        todo: action.payload,
+      };
     case "CLEAR":
       return {
         ...state,
