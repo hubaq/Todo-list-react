@@ -41,10 +41,10 @@ export default {
       backgroundImage: {
         "check-gradient":
           "linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
-        "desktop-light": "url('bg-desktop-light.jpg')",
-        "desktop-dark": "url('bg-desktop-dark.jpg')",
-        "mobile-light": "url('bg-mobile-light.jpg')",
-        "mobile-dark": "url('bg-mobile-dark.jpg')",
+        "desktop-light": "url('/bg-desktop-light.jpg')",
+        "desktop-dark": "url('/bg-desktop-dark.jpg')",
+        "mobile-light": "url('/bg-mobile-light.jpg')",
+        "mobile-dark": "url('/bg-mobile-dark.jpg')",
       },
     },
   },
